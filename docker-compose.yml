@@ -20,6 +20,8 @@ services:
     - IP_HEADER=X-Forwarded-For
     - ADMIN_TOKEN                       # Value-less variables are set in .env
     - SIGNUPS_ALLOWED
+    - SIGNUPS_DOMAINS_WHITELIST         # If set only emails from a given domains (e.g. "my-domain.com") can register. See: https://github.com/dani-garcia/bitwarden_rs/wiki/Disable-registration-of-new-users#restricting-registrations-to-certain-email-domains
+    - SIGNUPS_VERIFY                    # If registered users need to verify their emails.
     - SMTP_HOST
     - SMTP_FROM
     - SMTP_PORT
