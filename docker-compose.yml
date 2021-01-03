@@ -58,6 +58,7 @@ services:
     # https://github.com/linuxserver/docker-ddclient
     image: oznu/cloudflare-ddns:latest
     restart: always
+    container_name: cloudflare-ddns
     environment:
     - API_KEY
     - ZONE
